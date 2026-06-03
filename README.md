@@ -1,8 +1,12 @@
 # Copy Remote Clipboard Skill
 
-A small Codex skill for copying text to a remote or terminal clipboard with OSC52.
+A small agent skill for copying text to a remote or terminal clipboard with OSC52.
 
-## Install
+This is not specific to Codex. It should work for any coding agent or terminal
+agent that can run shell commands and write to the active terminal TTY. Codex is
+used below only as an example.
+
+## Install For Codex
 
 Copy or symlink the skill folder into your Codex skills directory:
 
@@ -14,7 +18,8 @@ cp -R copy-remote-clipboard ~/.codex/skills/
 ## Prerequisites
 
 - `base64` is available on PATH.
-- Your terminal emulator allows OSC52 clipboard writes.
+- Your terminal emulator allows OSC52 clipboard writes. Moshi supports OSC52
+  clipboard writes.
 - If you use tmux, enable clipboard passthrough:
 
 ```tmux
@@ -29,7 +34,7 @@ tmux source-file ~/.tmux.conf
 
 ## Example
 
-Ask Codex:
+Ask your agent, for example Codex:
 
 ```text
 Tell me a joke and copy it to my remote clipboard.
