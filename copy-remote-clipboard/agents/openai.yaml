@@ -1,0 +1,4 @@
+interface:
+  display_name: "Copy Remote Clipboard"
+  short_description: "Copy text through OSC52 terminal escapes"
+  default_prompt: "Use $copy-remote-clipboard to copy this text to my remote clipboard."
